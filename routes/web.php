@@ -1,5 +1,6 @@
 <?php
 
+Route::resource('messages', 'MessagesController');
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +12,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MessagesController@index');
